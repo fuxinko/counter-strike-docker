@@ -49,8 +49,8 @@ RUN curl -sqL "http://www.amxmodx.org/release/amxmodx-$amxmod_version-cstrike-li
 ADD files/maps.ini /opt/hlds/cstrike/addons/amxmodx/configs/maps.ini
 
 # Install bots
-RUN mkdir -p /opt/hlds/cstrike/addons/podbot
-ADD podbot2/* /opt/hlds/cstrike/addons/podbot/
+RUN mkdir -p /opt/hlds/cstrike/podbot
+ADD podbot3/* /opt/hlds/cstrike/podbot/
 
 
 # Cleanup
