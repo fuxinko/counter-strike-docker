@@ -50,7 +50,7 @@ ADD files/maps.ini /opt/hlds/cstrike/addons/amxmodx/configs/maps.ini
 
 # Install bots
 RUN mkdir -p /opt/hlds/cstrike/addons/podbot
-ADD podbot/* /opt/hlds/cstrike/addons/podbot/
+ADD podbot2/* /opt/hlds/cstrike/addons/podbot/
 
 
 # Cleanup
