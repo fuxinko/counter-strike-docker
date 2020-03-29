@@ -48,6 +48,11 @@ RUN curl -sqL "http://www.amxmodx.org/release/amxmodx-$amxmod_version-base-linux
 RUN curl -sqL "http://www.amxmodx.org/release/amxmodx-$amxmod_version-cstrike-linux.tar.gz" | tar -C /opt/hlds/cstrike/ -zxvf -
 ADD files/maps.ini /opt/hlds/cstrike/addons/amxmodx/configs/maps.ini
 
+# Install bots
+RUN mkdir -p /opt/hlds/cstrike/addons/podbot
+ADD podbot/* /opt/hlds/cstrike/addons/podbot/
+
+
 # Cleanup
 RUN apt remove -y curl
 
